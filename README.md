@@ -8,7 +8,7 @@ We can start off by creating a directory that will be used to hold all of our SS
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx.key -out nginx.crt
 ```
 
-## Create a local host if you have public domain use it
+## Create a local host OR if you have public domain use it and poit it to server IP where you run nginx
 
 ```bash
 sudo echo "127.0.0.1 local.jinna.com" >> /etc/hosts
