@@ -1,12 +1,10 @@
 version: '2'
-
 services:
-  proxy:
-    image: nginx:latest
-    volumes:
-      - "./proxy:/usr/share/html:ro"
-      - "./proxy/nginx.conf:/etc/nginx/nginx.conf:ro"
-      - "./proxy/ssl/certs://usr/share/certs:ro"
-    ports:
-      - "80:80"
-      - "443:443"
+    proxy:
+        image: nginx:latest
+        volumes:
+            - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+            - "./ssl:/etc/nginx/ssl:ro"
+        ports:
+            - "80:80"
+            - "443:443"
