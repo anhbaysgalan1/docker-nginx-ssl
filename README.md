@@ -24,7 +24,7 @@ sudo echo "127.0.0.1 local.jinna.com" >> /etc/hosts
     git clone https://github.com/JinnaBalu/docker-nginx-ssl.git
 ```
 
-## Help
+## Edit based on yur change
 
 *nginx.conf*
 
@@ -48,6 +48,10 @@ Either rename nginx.key , nginx.crt files in ssl folder
 OR
 
 in *nginx.conf* rename the value of the properties ssl_certificate, ssl_certificate_key
+```
+
+```bash
+docker-compose up -d
 ```
 
 If you find any issues please raise and issue on issues tab
